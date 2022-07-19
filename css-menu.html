@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;;
+    }
+    .menu,
+    .menu ul{
+      background-color: #3c3c3c;
+      color:#c4c4c4;
+    }
+    .menu ul li{
+
+    }
+    .menu>li{
+      display: inline-block;
+
+    }
+    .menu ul{
+      position: absolute;
+      display: none;
+    }
+    .menu li{
+      position: relative;
+      white-space: nowrap;
+    }
+    .menu li:hover > ul{
+      display: block
+    }
+    .menu ul ul{
+      left: 100%;
+      top: 0;
+    }
+    .menu li:hover{
+      background-color: #04395e;
+    }
+    .menu li li{
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>文件
+      <ul>
+        <li>新建文本文件</li>
+        <li>新建文件</li>
+        <li>新建窗口</li>
+        <li>打开文件</li>
+        <li>打开文件夹
+          <ul>
+            <li>打开文件夹</li>
+            <li>打开文件夹</li>
+            <li>打开文件夹</li>
+          </ul>
+        </li>
+        <li>从文件打开工作区</li>
+      </ul>
+    </li>
+    <li>编辑</li>
+    <li>选择</li>
+    <li>查看</li>
+  </ul>
+</body>
+</html>
