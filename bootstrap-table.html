@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .table tr{
+      border-bottom: 1px solid grey;
+    }
+
+    .table th{
+      text-align: left;
+    }
+
+    .table-striped tbody tr:nth-child(odd){
+      background-color: darkgray;
+    }
+
+    .table-hover tbody tr:hover{
+      background-color: darkgray;
+    }
+
+    .table-border td,.table-border th{
+      border: 2px solid blue;
+    }
+
+    .table-borderless td,.table-borderless th{
+      border: hidden;
+    }
+
+    .table-dark{
+      background-color: darkcyan;
+    }
+    .table-dark tbody tr:nth-child(odd){
+      background-color: darkblue;
+    }
+
+    .table-hover.table-dark tbody tr:hover{
+      background-color: darkgray;
+    }
+
+  </style>
+</head>
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Laborum!</th>
+        <th>Iure.</th>
+        <th>Autem?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>Explicabo.</td>
+        <td>Doloribus.</td>
+        <td>Saepe.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Minus.</td>
+        <td>Assumenda!</td>
+        <td>Nihil!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Earum?</td>
+        <td>Fugiat!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Dicta!</td>
+        <td>Dolores?</td>
+        <td>Libero.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Laborum!</th>
+        <th>Iure.</th>
+        <th>Autem?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>Explicabo.</td>
+        <td>Doloribus.</td>
+        <td>Saepe.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Minus.</td>
+        <td>Assumenda!</td>
+        <td>Nihil!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Earum?</td>
+        <td>Fugiat!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Dicta!</td>
+        <td>Dolores?</td>
+        <td>Libero.</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Laborum!</th>
+        <th>Iure.</th>
+        <th>Autem?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>Explicabo.</td>
+        <td>Doloribus.</td>
+        <td>Saepe.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Minus.</td>
+        <td>Assumenda!</td>
+        <td>Nihil!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Earum?</td>
+        <td>Fugiat!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Dicta!</td>
+        <td>Dolores?</td>
+        <td>Libero.</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-border">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Laborum!</th>
+        <th>Iure.</th>
+        <th>Autem?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>Explicabo.</td>
+        <td>Doloribus.</td>
+        <td>Saepe.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Minus.</td>
+        <td>Assumenda!</td>
+        <td>Nihil!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Earum?</td>
+        <td>Fugiat!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Dicta!</td>
+        <td>Dolores?</td>
+        <td>Libero.</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Laborum!</th>
+        <th>Iure.</th>
+        <th>Autem?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>Explicabo.</td>
+        <td>Doloribus.</td>
+        <td>Saepe.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Minus.</td>
+        <td>Assumenda!</td>
+        <td>Nihil!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Earum?</td>
+        <td>Fugiat!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Dicta!</td>
+        <td>Dolores?</td>
+        <td>Libero.</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Lorem.</th>
+        <th>Laborum!</th>
+        <th>Iure.</th>
+        <th>Autem?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+      <tr>
+        <td>Lorem.</td>
+        <td>Explicabo.</td>
+        <td>Doloribus.</td>
+        <td>Saepe.</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Minus.</td>
+        <td>Assumenda!</td>
+        <td>Nihil!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Earum?</td>
+        <td>Fugiat!</td>
+      </tr>
+      <tr>
+        <td>Lorem.</td>
+        <td>Dicta!</td>
+        <td>Dolores?</td>
+        <td>Libero.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
