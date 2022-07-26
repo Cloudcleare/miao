@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* flex */
+    body,html{
+      margin: 0;
+      padding: 0;
+    }
+    section{
+      display: flex;
+      width: 162px;
+      flex-wrap: wrap;
+    }
+    div{
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 3px solid red;
+      margin: 0 -3px -3px 0;
+      line-height: 50px;
+      text-align: center;
+    }
+    div:hover{
+      border: 3px  solid blue;
+      z-index: 2;
+    }
+
+    /* table */
+    table{
+      width: 162px;
+      border-collapse: collapse;
+    }
+    tr,col{
+      border:3px solid red
+    }
+    td{
+      width: 50px;
+      height: 50px;
+    }
+    td:hover{
+      border: 3px solid blue;
+    }
+
+    /* float */
+    ul{
+      list-style: none;
+      width: 168px;
+      height: 168px;
+    }
+    li{
+      float: left;
+      width: 53px;
+      height: 53px;
+      border:3px solid red;
+      margin:0 -3px -3px 0 ;
+      xbox-sizing: border-box;
+      position: relative;
+    }
+    li:hover{
+      border:3px solid blue;
+      xposition: relative;
+      z-index: 3;
+    }
+    span{
+      height: 40px;
+      width: 100px;
+      background-color: aqua;
+      display: table-cell;
+      vertical-align:bottom;
+      transition: 1s;
+      position: relative;
+    }
+    span:hover{
+      font-size: 20px;
+      xtransition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </section>
+  <br>
+  <table>
+    <col>
+    <col>
+    <col>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <br>
+  <span>订阅博客</span>
+</body>
+</html>
