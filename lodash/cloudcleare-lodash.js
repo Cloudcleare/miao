@@ -47,7 +47,7 @@ var cloudcleare = {
         result.push(array[i])
       }else {
         for (var j =0; j<array[i].length;j++){
-          result[i].push(array[j])
+          result.push(array[i][j])
         }
       }
     }
@@ -59,7 +59,7 @@ var cloudcleare = {
     if (!Array.isArray(array)){
       result.push(array)
     }else {
-      for (var i =0; i<arr.length;i++) {
+      for (var i =0; i<array.length;i++) {
         result = result.concat(flattenDeep(array[i]))
       }
     }
