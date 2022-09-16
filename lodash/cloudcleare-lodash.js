@@ -80,7 +80,7 @@ var cloudcleare = {
     }
 
     for (var i = 0; i <array.length;i++){
-      if (value == array[j]) {
+      if (value == array[i]) {
         return i
       }
     }
@@ -98,7 +98,7 @@ var cloudcleare = {
 
   initial:function initial(array) {
     var result =[]
-    for (var i = 0;i < array.length -2;i++){
+    for (var i = 0;i < array.length -1;i++){
       result.push(array[i])
     }
     return result
