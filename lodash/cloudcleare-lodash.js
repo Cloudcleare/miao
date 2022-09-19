@@ -79,7 +79,7 @@ var cloudcleare = {
       }
     }
 
-    for (var i = 0; i <array.length;i++){
+    for (var i =fromIndex; i <array.length;i++){
       if (value == array[i]) {
         return i
       }
@@ -102,6 +102,100 @@ var cloudcleare = {
       result.push(array[i])
     }
     return result
+  },
+
+  join:function join (array, separator=',') {
+    var str = ''
+    for (var i = 0; i <array.length; i ++) {
+      if (i == array.length -1) {
+        str = str + array[i]
+        return str
+      }
+      str = str + array[i] + separator
+    }
+  },
+
+  last:function last (array) {
+    return array[array.length-1]
+  },
+
+  pull:function pull(array, ...values) {
+    var result = []
+    for (var i = 0;i < array.length; i++) {
+      if (!(values.includes(array))) {
+        result.push(array[i])
+      }
+    }
+    return result
+  },
+
+  reverse:function reverse(array){
+    var result = []
+    for (var i = array.length-1; i >=0; i--) {
+      result.push(array[i])
+    }
+    return result
+  },
+
+  size:function size(collection) {
+    if (Array.isArray(collection) ||typeof collection === 'string' ) {
+      return collection.length
+    }else if (typeof collection == 'object') {
+      var arr = Object.keys(collection)
+      return arr.length
+    }
+  },
+
+  sample:function sample(collection) {
+    var collectionIndex = Math.floor(Math.random()*collection.length)
+    return collection[collectionIndex]
+  },
+
+  isUndefined:function isUndefined(value) {
+    if (typeof (value) == 'undefined'){
+      return true
+    }
+    return false
+  },
+
+  isNull:function isNull(value) {
+    if (!value && typeof value !== 'undefined' && value !=0){
+      return true
+    }
+    return false
+  },
+
+  isNil:function isNil(value) {
+    if (value ==undefined){
+      return true
+    }
+    return false
+  },
+
+  max:function max(array) {
+    var max =-Infinity
+    if(array.length < 1) {
+      return undefined
+    }
+    for (var i =0;i < array.length;i++) {
+      if(array[i] > max ) {
+        max = array[i]
+      }
+    }
+    return max
+  },
+
+  max:function min(array) {
+    var min =Infinity
+    if(array.length < 1) {
+      return undefined
+    }
+    for (var i =0;i < array.length;i++) {
+      if(array[i] < min ) {
+        min = array[i]
+      }
+    }
+    return min
   },
 
 
